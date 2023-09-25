@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+
+body {
+    background-color: #1b1b1b;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.background {
+    background-image: url('path-to-your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+nav {
+    backdrop-filter: blur(10px) saturate(200%) brightness(70%);
+    color: #fff;
+    display: flex;
+    height: 7vw;
+    width: 100%;
+    align-items: center;
+    justify-content: left;
+    padding: 0 1%;
+    z-index: 2;
+    margin: auto;
+}
+
+nav img {
+    height: 80%;
+    width: auto;
+    margin-right: 1%;
+    border-radius: 1vw;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 5px 5px 10px rgba(53, 53, 53, 0.459);
+}
+
+nav h1 {
+    font-size: 4vw;
+    font-weight: 800;
+    margin-right: 1%;
+}
+
+.content {
+    flex-direction: column;
+    align-items: left;
+    padding: 7vw;
+    padding-top: 0vw;
+}
+
+.content hr {
+    border: 0;
+    height: 4px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
+    margin: 1vw 0;
+}
+
+.search {
+    display: flex;
+    user-select: none;
+    margin-top: 2.5vw;
+    margin-left: 1.2vw;
+    z-index: 2;
+    position: relative;
+}
+
+.search input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 1vw 0 0 1vw;
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: 0.8vw 1.5vw;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+    outline: none;
+    width: 70%;
+}
+
+.search button {
+    background-color: #fff;
+    border: none;
+    border-radius: 0 1vw 1vw 0;
+    color: #222222;
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: 0.8vw 1vw;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+    transition: .3s all ease;
+}
+
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.game-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+.portal-background {
+    background-image: url('images/updated portal.gif');
+    background-size: cover;
+    background-position: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;  /* This line makes the image circular */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
