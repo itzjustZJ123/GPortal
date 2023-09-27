@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Duck Life 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Duck Life 3 | 3kh0</title>
     <link rel="shortcut icon" type="image/ico" href="favicon.ico">
     <script>
       window.RufflePlayer = window.RufflePlayer || {};
@@ -28,23 +28,22 @@
       };
     </script>
   </head>
-  <body style="background-color:black;">
+  <body style="background-color:black; margin:0; padding:0;">
     <center>
-      <!-- Title image removed -->
-      <div id="container" style="border: #ccc 3px solid;height:600px;width:937px;"></div>
-    <script>
-      window.RufflePlayer = window.RufflePlayer || {};
-      window.addEventListener("load", (event) => {
+      <div id="container" style="border: none; height:100vh; width:100vw;"></div>
+      <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.addEventListener("load", (event) => {
           const ruffle = window.RufflePlayer.newest();
           const player = ruffle.createPlayer();
           const container = document.getElementById("container");
           container.appendChild(player);
-          player.style.height = "600px";
-          player.style.width = "937px";
+          player.style.height = "100vh";
+          player.style.width = "100vw";
           player.load("ducklife3evolution.swf");
-      });
-    </script>
-    <script src="ruffle/ruffle.js"></script>
+        });
+      </script>
+      <script src="ruffle/ruffle.js"></script>
     </center>
     <script type="application/javascript" src="/js/main.js"></script>
   </body>
