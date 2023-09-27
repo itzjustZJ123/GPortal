@@ -11,19 +11,19 @@
     /* This will ensure your body takes the full viewport */
     body, html {
       height: 100%;
+      width: 100%;
       margin: 0;
       padding: 0;
       overflow: hidden; /* Prevent scrolling */
     }
 
-    /* This will make your game container scale according to the aspect ratio */
+    /* This will make your game container take full viewport */
     #gameContainer {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      max-height: 100%;
-      max-width: 100%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
   </style>
   <script>
