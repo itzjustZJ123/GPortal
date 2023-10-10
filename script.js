@@ -17,7 +17,7 @@ window.onload = function() {
                 display: block; // Removes any default spacing
             }
         </style>
-        <iframe src="https://handmadecurlyorganization.its-just-zjjust.repl.co"></iframe>
+        <iframe src="https://itzjustzj123.github.io/GPortal/"></iframe>
     `);
 
     // Redirect the current page to Google Classroom
