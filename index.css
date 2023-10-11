@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
 
-body {
+body, html {
+    height: 100%;
     background-color: #1b1b1b;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .background {
@@ -11,24 +13,22 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
     height: 100vh;
 }
 
-nav {
+header {
     backdrop-filter: blur(10px) saturate(200%) brightness(70%);
     color: #fff;
     display: flex;
-    height: 7vw;
+    height: 10vh; /* Adjust as needed */
     width: 100%;
     align-items: center;
-    justify-content: space-between; /* Changed from 'left' to ensure proper alignment */
+    justify-content: space-between;
     padding: 0 1%;
     z-index: 3;
-    margin: auto;
 }
 
-nav img {
+header img {
     height: 80%;
     width: auto;
     margin-right: 1%;
@@ -38,35 +38,23 @@ nav img {
     box-shadow: 5px 5px 10px rgba(53, 53, 53, 0.459);
 }
 
-nav h1 {
+header h1 {
     font-size: 4vw;
     font-weight: 800;
-    margin-right: 1%;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    padding: 7vw;
-    margin-top: 7vw;
-}
-
-.content hr {
-    border: 0;
-    height: 4px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
-    margin: 1vw 0;
+.main-content {
+    padding: 2vw;
 }
 
 .search {
     display: flex;
     user-select: none;
-    margin-top: 2.5vw;
-    margin-left: 1.2vw;
-    z-index: 2;
+    margin: 2.5vw 1.2vw;
     position: relative;
 }
+
+/* ... Rest of your styles ... */
 
 .search input {
     background-color: rgba(255, 255, 255, 0.1);
