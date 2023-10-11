@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
-
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
     background-color: #1b1b1b;
+    color: white;
+    overflow-x: hidden;
 }
 
 .background {
@@ -18,21 +17,19 @@ body, html {
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 header img {
-    height: 60px;
+    height: 80px; /* Adjusted size */
     margin-right: 1rem;
 }
 
 header h1 {
-    font-size: 2rem;
-    color: white;
-    text-shadow: 0 0 10px purple, 0 0 20px purple, 0 0 30px purple, 0 0 40px purple;
+    font-size: 2rem; /* Adjusted size */
+    margin-left: 1rem; /* Positioning it to the right of the logo */
 }
 
 .main-content {
@@ -43,67 +40,64 @@ header h1 {
     display: flex;
     justify-content: space-between;
     margin: 1rem 0;
+    position: relative;
 }
 
-.search input {
-    padding: 10px;
-    width: 70%;
-    border-radius: 5px 0 0 5px;
+.search input, .search button {
     border: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
     outline: none;
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    box-shadow: 0 0 5px purple, 0 0 25px purple, 0 0 50px purple, 0 0 100px purple; /* Neon glow */
 }
 
 .search button {
-    padding: 10px;
-    background-color: purple;
-    border-radius: 0 5px 5px 0;
-    border: none;
+    margin-left: 10px;
     cursor: pointer;
-    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .game-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 20px;
 }
 
 .game-link {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
     color: #fff;
-    width: 180px;
     margin: 15px;
-    padding: 10px;
-    border-radius: 10px;
-    transition: transform .2s;
+    position: relative; /* Needed to position the portal */
 }
 
 .portal-background {
-    width: 160px;
-    height: 160px;
     background-image: url('images/updated portal.gif');
     background-size: cover;
     background-position: center;
+    width: 130px; /* Adjusted size */
+    height: 130px; /* Adjusted size */
     border-radius: 50%;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1; /* Place it behind the game icon */
 }
 
 .game-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 120px;
-    height: 120px;
+    width: 90px; /* Adjusted size */
+    height: 90px; /* Adjusted size */
     border-radius: 50%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4), 0 0 5px purple, 0 0 10px purple;
-    z-index: 2;
+    box-shadow: 0 0 5px purple, 0 0 25px purple, 0 0 50px purple, 0 0 100px purple; /* Neon glow */
 }
