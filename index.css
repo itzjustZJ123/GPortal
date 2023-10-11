@@ -12,7 +12,7 @@ body, html {
     height: 100%;
     overflow-x: hidden;
     background-color: #1b1b1b;
-    font-family: 'AttackGraffiti', 'Montserrat', sans-serif; /* Using AttackGraffiti as primary font */
+    font-family: 'AttackGraffiti', 'Montserrat', sans-serif;
 }
 
 .background {
@@ -24,23 +24,26 @@ body, html {
 
 header {
     display: flex;
-    align-items: center;
-    padding: 1rem 3rem;
+    flex-direction: column; /* Adjust the header to be a column layout */
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    height: 100%; /* Make the header take up the entire viewport height */
+    padding: 1rem;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px) saturate(200%) brightness(70%);
 }
 
 header img {
     height: 250px;
-    margin-right: 2rem;
+    margin-bottom: 2rem; /* Add margin to separate the logo from the text */
     filter: drop-shadow(0 0 8px purple);
 }
 
 header h1 {
     font-size: 2.5rem;
     color: white;
-    margin-right: auto; /* Push it to the left */
     text-shadow: 0 0 10px purple, 0 0 20px purple, 0 0 30px purple, 0 0 40px purple;
+    text-align: center; /* Center the text */
 }
 
 .search {
