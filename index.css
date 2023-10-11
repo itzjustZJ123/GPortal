@@ -3,6 +3,8 @@ body, html {
     padding: 0;
     height: 100%;
     overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1b1b1b; /* Dark background to emphasize neon */
 }
 
 .background {
@@ -17,16 +19,17 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: rgba(0, 0, 0, 0.5);  /* Optional, for better readability */
+    background-color: rgba(0, 0, 0, 0.5); /* Translucent black background */
 }
 
-header img {
-    height: 60px;   /* Adjust as per your requirement */
-    margin-right: 1rem;
+header img, .game-icon, .portal-background {
+    filter: brightness(1.2) drop-shadow(0 0 8px purple); /* Neon Glow effect for images */
 }
 
 header h1 {
-    font-size: 1.5rem;  /* Adjust as per your requirement */
+    font-size: 2rem;
+    text-shadow: 0 0 10px white, 0 0 15px purple, 0 0 20px purple; /* Neon Glow effect for text */
+    color: white;
 }
 
 .main-content {
@@ -38,34 +41,32 @@ header h1 {
     justify-content: space-between;
     margin: 1rem 0;
 }
-/* ... Rest of your styles ... */
 
 .search input {
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
-    border-radius: 1vw 0 0 1vw;
-    color: #fff;
-    font-size: 1.5vw;
-    font-weight: 600;
-    padding: 0.8vw 1.5vw;
-    font-family: 'Montserrat', sans-serif;
-    z-index: 1;
-    outline: none;
+    border-radius: 10px 0 0 10px;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 15px;
     width: 70%;
+    text-shadow: 0 0 5px white, 0 0 10px purple, 0 0 15px purple; /* Neon Glow effect for text */
 }
 
 .search button {
-    background-color: #fff;
+    background-color: rgba(50, 50, 50, 0.5);
     border: none;
-    border-radius: 0 1vw 1vw 0;
-    color: #222222;
-    font-size: 1.5vw;
-    font-weight: 600;
-    padding: 0.8vw 1vw;
+    border-radius: 0 10px 10px 0;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 15px;
     cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    z-index: 1;
+    text-shadow: 0 0 5px white, 0 0 10px purple, 0 0 15px purple; /* Neon Glow effect for text */
     transition: .3s all ease;
+}
+
+.search button:hover {
+    background-color: purple;
 }
 
 .game-container {
@@ -74,7 +75,6 @@ header h1 {
     justify-content: space-between;
     padding: 20px;
     position: relative;
-    z-index: 1;
 }
 
 .game-link {
@@ -90,7 +90,6 @@ header h1 {
 }
 
 .portal-background {
-    background-image: url('images/updated portal.gif');
     background-size: cover;
     background-position: center;
     width: 180px;
@@ -107,5 +106,4 @@ header h1 {
     height: 100px;
     border-radius: 50%;  /* This line makes the image circular */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    z-index: 2;
 }
