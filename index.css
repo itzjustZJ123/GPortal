@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
-    background-color: #1b1b1b; /* Dark background to emphasize neon */
+    background-color: #1b1b1b;
 }
 
 .background {
@@ -16,22 +18,21 @@ body, html {
 
 header {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: rgba(0, 0, 0, 0.5); /* Translucent black background */
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 header img {
-    height: 80px;
+    height: 60px;
     margin-right: 1rem;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    text-shadow: 0 0 8px purple, 0 0 10px purple; /* Neon Glow effect for text */
+    font-size: 2rem;
     color: white;
-    margin: 0;
+    text-shadow: 0 0 10px purple, 0 0 20px purple, 0 0 30px purple, 0 0 40px purple;
 }
 
 .main-content {
@@ -45,73 +46,64 @@ header h1 {
 }
 
 .search input {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: none;
-    border-radius: 10px 0 0 10px;
-    color: white;
-    font-size: 1.5rem;
-    padding: 10px 15px;
+    padding: 10px;
     width: 70%;
-    text-shadow: 0 0 5px purple;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
 }
 
 .search button {
-    background-color: rgba(50, 50, 50, 0.5);
-    border: none;
-    border-radius: 0 10px 10px 0;
-    color: white;
-    font-size: 1.5rem;
-    padding: 10px 15px;
-    cursor: pointer;
-    text-shadow: 0 0 5px purple;
-    transition: .3s all ease;
-}
-
-.search button:hover {
+    padding: 10px;
     background-color: purple;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    cursor: pointer;
+    color: white;
 }
 
 .game-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     padding: 20px;
-    position: relative;
 }
 
 .game-link {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
     color: #fff;
+    width: 180px;
     margin: 15px;
     padding: 10px;
     border-radius: 10px;
     transition: transform .2s;
-    position: relative;
 }
 
 .portal-background {
+    width: 160px;
+    height: 160px;
+    background-image: url('images/updated portal.gif');
     background-size: cover;
     background-position: center;
-    width: 140px;
-    height: 140px;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    z-index: 1;
 }
 
 .game-icon {
-    width: 80px;
-    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4), 0 0 5px purple, 0 0 10px purple;
     z-index: 2;
-    filter: drop-shadow(0 0 8px purple);
 }
