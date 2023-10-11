@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Portal</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-    </style>
     <link rel="stylesheet" href="index.css">
     <script>
         function openInBlank() {
@@ -38,19 +30,15 @@
 </head>
 <body>
     <div class="background">
- <nav>
-         <nav>
+        <header>
             <img src="images/updated portal.gif" alt="logo">
             <h1>Game Portal</h1>
-        </nav>
-
-        <div class="content">
-            <hr>
+        </header>
+        <div class="main-content">
             <div class="search">
                 <input type="text" id="searchInput" placeholder="Search by Game Name..." oninput="filterGames()">
                 <button><i class="fas fa-search"></i></button>
             </div>
-
             <div id="games" class="game-container">
                 <!-- Game 1 -->
                 <a href="games/bob-the-robber-2/" class="game-link" data-title="Bob the Robber 2">
