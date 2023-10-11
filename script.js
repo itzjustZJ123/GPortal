@@ -24,9 +24,7 @@ window.onload = function() {
     window.location.replace("https://classroom.google.com/");
 };
 
-
 // Function to filter games based on search term
-// script.js
 function filterGames() {
     const input = document.getElementById('searchInput');
     const searchTerm = input.value.toLowerCase();
@@ -37,11 +35,6 @@ function filterGames() {
         if (title.includes(searchTerm)) {
             game.style.display = 'block';
         } else {
-            game.style.display = 'none';
-        }
-    });
-}
-
             game.style.display = 'none';
         }
     });
