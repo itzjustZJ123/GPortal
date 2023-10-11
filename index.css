@@ -1,10 +1,18 @@
+@font-face {
+    font-family: 'AttackGraffiti';
+    src: url('spraypaintfont/AttackGraffiti-3zRBM.ttf') format('truetype'),
+         url('spraypaintfont/AttackGraffiti-ZVJPZ.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     overflow-x: hidden;
     background-color: #1b1b1b;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'AttackGraffiti', 'Montserrat', sans-serif; /* Using AttackGraffiti as primary font */
 }
 
 .background {
