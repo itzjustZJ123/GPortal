@@ -12,6 +12,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    height: 100vh;
 }
 
 nav {
@@ -21,9 +22,9 @@ nav {
     height: 7vw;
     width: 100%;
     align-items: center;
-    justify-content: left;
+    justify-content: space-between; /* Changed from 'left' to ensure proper alignment */
     padding: 0 1%;
-    z-index: 2;
+    z-index: 3;
     margin: auto;
 }
 
@@ -44,10 +45,11 @@ nav h1 {
 }
 
 .content {
+    display: flex;
     flex-direction: column;
     align-items: left;
     padding: 7vw;
-    padding-top: 0vw;
+    margin-top: 7vw;
 }
 
 .content hr {
