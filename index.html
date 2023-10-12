@@ -6,28 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Portal</title>
     <link rel="stylesheet" href="index.css">
-    <script>
-        function openInBlank() {
-            var win = window.open();
-            win.document.body.style.margin = '0';
-            win.document.body.style.height = '100vh';
-            var iframe = win.document.createElement('iframe');
-            iframe.style.border = 'none';
-            iframe.style.width = '100%';
-            iframe.style.height = '100%';
-            iframe.style.margin = '0';
-            iframe.src = "https://itzjustzj123.github.io/GPortal/"; // Using the specified URL for the iframe
-            win.document.body.appendChild(iframe);
-
-            location.replace("https://classroom.google.com/");
-        }
-
-        // Run the function immediately on page load
-        window.onload = function() {
-            openInBlank();
-        }
-    </script>
-</head>
 <body>
     <div class="background">
         <header>
