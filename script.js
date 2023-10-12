@@ -1,29 +1,3 @@
-window.onload = function() {
-    // Open a new blank window
-    var win = window.open();
-    win.document.write(`
-        <style>
-            body, html {
-                padding: 0;
-                margin: 0;
-                overflow: hidden; // Prevents scrolling
-                width: 100%;
-                height: 100%;
-            }
-            iframe {
-                border: none;
-                width: 100%;
-                height: 100%;
-                display: block; // Removes any default spacing
-            }
-        </style>
-        <iframe src="https://itzjustzj123.github.io/GPortal/"></iframe>
-    `);
-
-    // Redirect the current page to Google Classroom
-    window.location.replace("https://classroom.google.com/");
-};
-
 // Function to filter games based on search term
 function filterGames() {
     const input = document.getElementById('searchInput');
