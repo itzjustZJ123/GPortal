@@ -27,14 +27,14 @@ header {
     flex-direction: column; /* Adjust the header to be a column layout */
     justify-content: center; /* Center the content vertically */
     align-items: center; /* Center the content horizontally */
-    height: 100%; /* Make the header take up the entire viewport height */
+    height: 50%; /* Make the header take up the entire viewport height */
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px) saturate(200%) brightness(70%);
 }
 
 header img {
-    height: 250px;
+    height: 230px;
     margin-bottom: 2rem; /* Add margin to separate the logo from the text */
     filter: drop-shadow(0 0 8px purple);
 }
