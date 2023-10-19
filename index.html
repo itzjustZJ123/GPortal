@@ -214,6 +214,7 @@
                         <img src="games/just-fall/unnamed.png" alt="just fall" class="game-icon">
                     </div>
                 </a>
+                <!-- web proxy -->
 <a href="javascript:void(0);" class="game-link" data-title="Proxy" onclick="openGame()">
     <div class="portal-background bigger-portal">
         <img src="images/incog.png" alt="proxy" class="game-icon">
@@ -225,10 +226,13 @@ function openGame() {
     var win = window.open();
     var url = "https://eic.goldenn.dev/1.html";
     var iframe = win.document.createElement('iframe');
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
-    iframe.style.border = "none";
+    iframe.style.border = 'none';
+    iframe.style.width = '100%';
+    iframe.style.height = '100vh'; // Take up the full screen height
+    iframe.style.margin = '0';
     iframe.src = url;
+    win.document.body.style.margin = '0';
+    win.document.body.style.height = '100vh'; // Set the body to full screen height
     win.document.body.appendChild(iframe);
 }
 </script>
