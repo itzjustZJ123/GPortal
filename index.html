@@ -18,6 +18,29 @@
             </div>
             <div id="games" class="game-container">
 
+                    
+                <!-- chat -->
+<a href="javascript:void(0);" class="game-link" data-title="Proxy" onclick="openGame()">
+    <div class="portal-background bigger-portal">
+        <img src="images/incog.png" alt="chat class="game-icon">
+    </div>
+</a>
+
+<script>
+function openGame() {
+    var win = window.open();
+    var url = "https://chatroomdjgames.vercel.app/";
+    var iframe = win.document.createElement('iframe');
+    iframe.style.border = 'none';
+    iframe.style.width = '100%';
+    iframe.style.height = '100vh'; // Take up the full screen height
+    iframe.style.margin = '0';
+    iframe.src = url;
+    win.document.body.style.margin = '0';
+    win.document.body.style.height = '100vh'; // Set the body to full screen height
+    win.document.body.appendChild(iframe);
+}
+</script>
                 <!-- Game 1 -->
                 <a href="games/bob-the-robber-2/" class="game-link" data-title="Bob the Robber 2">
                     <div class="portal-background bigger-portal">
