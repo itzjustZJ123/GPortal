@@ -20,7 +20,7 @@
 
                     
                 <!-- chat -->
-<a href="javascript:void(0);" class="game-link" data-title="Proxy" onclick="openGame()">
+<a href="javascript:void(0);" class="game-link" data-title="Chat" onclick="openGame()">
     <div class="portal-background bigger-portal">
         <img src="images/chat icon.png" alt="chat class="game-icon">
     </div>
@@ -32,8 +32,8 @@ function openGame() {
     var url = "https://chatroomdjgames.vercel.app/";
     var iframe = win.document.createElement('iframe');
     iframe.style.border = 'none';
-    iframe.style.width = '100%';
-    iframe.style.height = '100vh'; // Take up the full screen height
+    iframe.style.width = '50%';
+    iframe.style.height = '50vh'; // Take up the full screen height
     iframe.style.margin = '0';
     iframe.src = url;
     win.document.body.style.margin = '0';
