@@ -20,13 +20,13 @@
 
 <!-- Chat -->
 
-                <a href="javascript:void(0);" class="game-link" data-title="Chat" onclick="openGame()">
+                <a href="javascript:void(0);" class="game-link" data-title="Chat" onclick="openchat()">
                     <div class="portal-background bigger-portal">
                         <img src="images/chat icon.png" alt="chat" class="game-icon">
                     </div>
                 </a>                    
 <script>
-function openGame() {
+function openchat() {
     var win = window.open();
     var url = "https://chatroomdjgames.vercel.app/";
     var iframe = win.document.createElement('iframe');
@@ -40,6 +40,30 @@ function openGame() {
     win.document.body.appendChild(iframe);
 }
 </script>
+
+
+                <a href="javascript:void(0);" class="game-link" data-title="Block Blast" onclick="openblockblast()">
+                    <div class="portal-background bigger-portal">
+                        <img src="images/block" alt="block blast" class="game-icon">
+                    </div>
+                </a>    
+<script>
+function openblockblast() {
+    var win = window.open();
+    var url = "https://itzjustzj123.github.io/Block-Blast";
+    var iframe = win.document.createElement('iframe');
+    iframe.style.border = 'none';
+    iframe.style.width = '100%';
+    iframe.style.height = '100vh'; // Take up the full screen height
+    iframe.style.margin = '0';
+    iframe.src = url;
+    win.document.body.style.margin = '0';
+    win.document.body.style.height = '100vh'; // Set the body to full screen height
+    win.document.body.appendChild(iframe);
+}
+</script>
+
+
                 <!-- Game 1 -->
                 <a href="games/bob-the-robber-2/" class="game-link" data-title="Bob the Robber 2">
                     <div class="portal-background bigger-portal">
@@ -89,12 +113,7 @@ function openGame() {
                     </div>
                 </a>
               
-                <!-- Game 9 -->
-                <a href="games/rocketleague" class="game-link" data-title="Rocket League">
-                    <div class="portal-background bigger-portal">
-                        <img src="images/rocketleague.png" alt="rocket league" class="game-icon">
-                    </div>
-                </a>
+
                 <!-- Game 10 -->
                 <a href="games/coreball" class="game-link" data-title="Coreball">
                     <div class="portal-background bigger-portal">
@@ -204,12 +223,7 @@ function openGame() {
                     </div>
                 </a>
                 <!-- Game 36 -->
-                <a href="games/worlds-hardest-game-2" class="game-link" data-title="Worlds Hardest Game 2">
-                    <div class="portal-background bigger-portal">
-                        <img src="games/worlds-hardest-game-2/images/worldshardestgame2.png" alt="worlds hardest game 2" class="game-icon">
-                    </div>
-                </a>
-                
+
                 <!-- Game 37 -->
                 <a href="games/tiny-fishing" class="game-link" data-title="Tiny Fishing">
                     <div class="portal-background bigger-portal">
