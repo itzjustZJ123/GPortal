@@ -40,6 +40,33 @@ function opentanuki() {
     win.document.body.appendChild(iframe);
 }
 </script>
+
+
+
+
+                                <a href="javascript:void(0);" class="game-link" data-title="Granny" onclick="opengranny()">
+                    <div class="portal-background bigger-portal">
+                        <img src="images/granny.png.png" alt="granny" class="game-icon">
+                    </div>
+                </a>                    
+<script>
+function opengranny() {
+    var win = window.open();
+    var url = "https://itzjustzj123.github.io/granny";
+    var iframe = win.document.createElement('iframe');
+    iframe.style.border = 'none';
+    iframe.style.width = '100%';
+    iframe.style.height = '100vh'; // Take up the full screen height
+    iframe.style.margin = '0';
+    iframe.src = url;
+    win.document.body.style.margin = '0';
+    win.document.body.style.height = '100vh'; // Set the body to full screen height
+    win.document.body.appendChild(iframe);
+}
+</script>
+
+
+                
                 <a href="javascript:void(0);" class="game-link" data-title="Drift Hunters" onclick="opendrifthunt()">
                     <div class="portal-background bigger-portal">
                         <img src="images/drift.png" alt="drift hunters" class="game-icon">
@@ -66,29 +93,7 @@ function opendrifthunt() {
 
 
 
-<!-- granny -->
-<a href="javascript:void(0);" class="game-link" data-title="Granny" onclick="openGran()">
-    <div class="portal-background bigger-portal">
-        <img src="images/granny.png.png" alt="granny" class="game-icon">
-    </div>
-</a>
 
-<script>
-function openGran() {
-    var win = window.open();
-    var url = "https://itzjustzj123.github.io/granny/";
-    var iframe = win.document.createElement('iframe');
-    iframe.style.border = 'none';
-    iframe.style.width = '100%';
-    iframe.style.height = '100vh'; // Take up the full screen height
-    iframe.style.margin = '0';
-    iframe.src = url;
-    win.document.body.style.margin = '0';
-    win.document.body.style.height = '100vh'; // Set the body to full screen height
-    win.document.body.appendChild(iframe);
-}
-</script>
-                
                 
                 
 </script>
