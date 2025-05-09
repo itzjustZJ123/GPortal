@@ -63,16 +63,39 @@ function opendrifthunt() {
 
 
 
+<!-- tanuki -->
+<a href="javascript:void(0);" class="game-link" data-title="Tanuki Sunset" onclick="opentanuk()">
+    <div class="portal-background bigger-portal">
+        <img src="images/tanuki.jpeg" alt="tanuki sunset" class="game-icon">
+    </div>
+</a>
 
-
-
-               <a href="javascript:void(0);" class="game-link" data-title="Granny" onclick="opengranny()">
-                    <div class="portal-background bigger-portal">
-                        <img src="images/granny.png.png" alt="granny" class="game-icon">
-                    </div>
-                </a>                    
 <script>
-function opengranny() {
+function opentanuk() {
+    var win = window.open();
+    var url = "https://itzjustzj123.github.io/tanuki/";
+    var iframe = win.document.createElement('iframe');
+    iframe.style.border = 'none';
+    iframe.style.width = '100%';
+    iframe.style.height = '100vh'; // Take up the full screen height
+    iframe.style.margin = '0';
+    iframe.src = url;
+    win.document.body.style.margin = '0';
+    win.document.body.style.height = '100vh'; // Set the body to full screen height
+    win.document.body.appendChild(iframe);
+}
+</script>
+
+
+<!-- granny -->
+<a href="javascript:void(0);" class="game-link" data-title="Granny" onclick="openGran()">
+    <div class="portal-background bigger-portal">
+        <img src="images/granny.png.png" alt="granny" class="game-icon">
+    </div>
+</a>
+
+<script>
+function openGran() {
     var win = window.open();
     var url = "https://itzjustzj123.github.io/granny/";
     var iframe = win.document.createElement('iframe');
