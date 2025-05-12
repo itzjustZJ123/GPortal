@@ -41,6 +41,26 @@ function opentanuki() {
 }
 </script>
 
+                <a href="javascript:void(0);" class="game-link" data-title="Time Shooter 2" onclick="opentimes2()">
+                    <div class="portal-background bigger-portal">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5p70Idryx-Ysdk0j_AdhovNF59ri0Cn4h9A&s" alt="time shooter 2" class="game-icon">
+                    </div>
+                </a>                    
+<script>
+function opentimes2() {
+    var win = window.open();
+    var url = "https://itzjustzj123.github.io/time-shooter-2/";
+    var iframe = win.document.createElement('iframe');
+    iframe.style.border = 'none';
+    iframe.style.width = '100%';
+    iframe.style.height = '100vh'; // Take up the full screen height
+    iframe.style.margin = '0';
+    iframe.src = url;
+    win.document.body.style.margin = '0';
+    win.document.body.style.height = '100vh'; // Set the body to full screen height
+    win.document.body.appendChild(iframe);
+}
+</script>
 
 
 
@@ -328,12 +348,7 @@ function openduckhunt() {
                     </div>
                 </a>
                 
-                 <!-- Game 39 -->
-                <a href="games/superhot" class="game-link" data-title="Super Hot">
-                    <div class="portal-background bigger-portal">
-                        <img src="games/superhot/hot.jpg" alt="super hot" class="game-icon">
-                    </div>
-                </a>
+
                 
 
 
