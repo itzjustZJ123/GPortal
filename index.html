@@ -107,6 +107,26 @@ function opengranny() {
 }
 </script>
 
+                                <a href="javascript:void(0);" class="game-link" data-title="Granny 2" onclick="opengranny2()">
+                    <div class="portal-background bigger-portal">
+                        <img src="https://play-lh.googleusercontent.com/iZ7NP-56YenT2dpgKEAw3n7IKFyu-S_9Iu3ayo28XYTgZpFtxsK_HXltV36pysSJqq8" alt="granny 2" class="game-icon">
+                    </div>
+                </a>                    
+<script>
+function opengranny2() {
+    var win = window.open();
+    var url = "https://itzjustzj123.github.io/granny-2";
+    var iframe = win.document.createElement('iframe');
+    iframe.style.border = 'none';
+    iframe.style.width = '100%';
+    iframe.style.height = '100vh'; // Take up the full screen height
+    iframe.style.margin = '0';
+    iframe.src = url;
+    win.document.body.style.margin = '0';
+    win.document.body.style.height = '100vh'; // Set the body to full screen height
+    win.document.body.appendChild(iframe);
+}
+</script>
 
                 
                 <a href="javascript:void(0);" class="game-link" data-title="Drift Hunters" onclick="opendrifthunt()">
